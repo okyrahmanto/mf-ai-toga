@@ -71,7 +71,7 @@ class Management extends AuthController
 		$crud->setSubject('Toga');
         //$crud->unsetJquery();
 		$crud->unsetFields(['uid']);
-		$crud->unsetColumns(['uid']);
+		$crud->unsetColumns(['uid','bahan_berkhasiat','bahan_berkhasiat_en','khasiat','khasiat_en']);
         $crud->unsetBootstrap();
 		$crud->displayAs('name_latin','Nama Latin');
 		$crud->displayAs('name','Nama');

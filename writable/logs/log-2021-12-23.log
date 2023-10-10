@@ -1,0 +1,136 @@
+CRITICAL - 2021-12-23 19:56:55 --> Trying to get property 'first_name' of non-object
+#0 /var/www/app/app/Views/management/header.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 469, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/head...', Array, true)
+#4 /var/www/app/app/Views/management/main-analisis-ujian.php(94): view('management/head...')
+#5 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#6 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/main...', Array, true)
+#8 /var/www/app/app/Controllers/Management.php(2110): view('management/main...', Array)
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hasil_analisis_ujian('cerdas', '4')
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-23 20:12:06 --> Undefined variable: db
+#0 /var/www/app/app/Controllers/Management.php(2080): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 2080, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hasil_analisis_ujian('cerdas', '4')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-23 20:13:15 --> Unknown column 'j6bddd128.nama_peserta' in 'field list'
+CRITICAL - 2021-12-23 20:13:15 --> Unknown column 'j6bddd128.nama_peserta' in 'field list'
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT `hasil_u...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hasil_u...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hasil_u...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `hasil_u...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1383): App\Models\GroceryCrudModel->get_list()
+#6 /var/www/app/app/Libraries/GroceryCrud.php(1503): App\Libraries\grocery_CRUD_Model_Driver->get_list()
+#7 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#8 /var/www/app/app/Controllers/Management.php(2113): App\Libraries\GroceryCrud->render()
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hasil_analisis_ujian('cerdas', '4')
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-23 20:14:07 --> syntax error, unexpected '$crud' (T_VARIABLE)
+#0 /var/www/app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute('management/hasi...')
+#1 /var/www/app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle('management/hasi...')
+#2 /var/www/app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-23 20:14:52 --> include(assets/grocery_crud/themes/datatable/config.php): failed to open stream: No such file or directory
+#0 /var/www/app/app/Libraries/GroceryCrud.php(2731): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(assets/...', '/var/www/app/ap...', 2731, Array)
+#1 /var/www/app/app/Libraries/GroceryCrud.php(2731): include()
+#2 /var/www/app/app/Libraries/GroceryCrud.php(4490): App\Libraries\grocery_CRUD_Layout->setThemeBasics()
+#3 /var/www/app/app/Controllers/Management.php(2115): App\Libraries\GroceryCrud->render()
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hasil_analisis_ujian('cerdas', '4')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-23 20:16:51 --> Class 'Grocery_CRUD' not found
+#0 /var/www/app/public/assets/grocery_crud/themes/bootstrap/views/list.php(4): include()
+#1 /var/www/app/app/Libraries/GroceryCrud.php(2801): include('/var/www/app/pu...')
+#2 /var/www/app/app/Libraries/GroceryCrud.php(1562): App\Libraries\grocery_CRUD_Layout->_theme_view('list.php', Array, true)
+#3 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#4 /var/www/app/app/Controllers/Management.php(2115): App\Libraries\GroceryCrud->render()
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hasil_analisis_ujian('pribadi', '4')
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-23 20:22:14 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('13')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('13')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-23 20:27:50 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('5')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-23 23:44:47 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('5')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-23 23:45:25 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('5')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-23 23:45:28 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('5')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-23 23:47:04 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('5')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-23 23:47:07 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('13')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('13')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

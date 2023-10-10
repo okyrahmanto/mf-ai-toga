@@ -1,0 +1,113 @@
+CRITICAL - 2021-11-08 01:41:52 --> Too few arguments to function App\Controllers\Management::generateNullNorma(), 0 passed in /var/www/app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->generateNullNorma()
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-08 01:42:01 --> Too few arguments to function App\Controllers\Management::generatenullnorma(), 0 passed in /var/www/app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->generatenullnorma()
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-08 03:30:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''praktis'='100'  where rs='mean'' at line 1
+CRITICAL - 2021-11-08 03:30:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''praktis'='100'  where rs='mean'' at line 1
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('UPDATE norma se...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE norma se...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE norma se...')
+#3 /var/www/app/app/Controllers/Management.php(626): CodeIgniter\Database\BaseConnection->query('UPDATE norma se...')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->updatemeannorma('3', 'praktis', '100')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-08 19:19:27 --> Unknown column 'waktu' in 'where clause'
+CRITICAL - 2021-11-08 19:19:28 --> Unknown column 'waktu' in 'where clause'
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT *, judul...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, judul...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, judul...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *, judul...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(382): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1426): App\Models\GroceryCrudModel->get_relation_n_n_unselected_array(Object(stdClass), NULL)
+#6 /var/www/app/app/Libraries/GroceryCrud.php(2479): App\Libraries\grocery_CRUD_Model_Driver->get_relation_n_n_unselected_array(Object(stdClass), NULL)
+#7 /var/www/app/app/Libraries/GroceryCrud.php(231): App\Libraries\grocery_CRUD_Layout->get_relation_n_n_input(Object(stdClass), NULL)
+#8 /var/www/app/app/Libraries/GroceryCrud.php(2548): App\Libraries\grocery_CRUD_Field_Types->get_field_input(Object(stdClass), NULL)
+#9 /var/www/app/app/Libraries/GroceryCrud.php(1765): App\Libraries\grocery_CRUD_Layout->get_add_input_fields()
+#10 /var/www/app/app/Libraries/GroceryCrud.php(4513): App\Libraries\grocery_CRUD_Layout->showAddForm()
+#11 /var/www/app/app/Controllers/Management.php(450): App\Libraries\GroceryCrud->render()
+#12 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->daytest_test('add')
+#13 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#14 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+ERROR - 2021-11-08 19:20:34 --> Unknown column 'sort_column' in 'where clause'
+CRITICAL - 2021-11-08 19:20:34 --> Unknown column 'sort_column' in 'where clause'
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT *, judul...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, judul...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, judul...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *, judul...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(382): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1426): App\Models\GroceryCrudModel->get_relation_n_n_unselected_array(Object(stdClass), NULL)
+#6 /var/www/app/app/Libraries/GroceryCrud.php(2479): App\Libraries\grocery_CRUD_Model_Driver->get_relation_n_n_unselected_array(Object(stdClass), NULL)
+#7 /var/www/app/app/Libraries/GroceryCrud.php(231): App\Libraries\grocery_CRUD_Layout->get_relation_n_n_input(Object(stdClass), NULL)
+#8 /var/www/app/app/Libraries/GroceryCrud.php(2548): App\Libraries\grocery_CRUD_Field_Types->get_field_input(Object(stdClass), NULL)
+#9 /var/www/app/app/Libraries/GroceryCrud.php(1765): App\Libraries\grocery_CRUD_Layout->get_add_input_fields()
+#10 /var/www/app/app/Libraries/GroceryCrud.php(4513): App\Libraries\grocery_CRUD_Layout->showAddForm()
+#11 /var/www/app/app/Controllers/Management.php(450): App\Libraries\GroceryCrud->render()
+#12 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->daytest_test('add')
+#13 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#14 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+ERROR - 2021-11-08 20:01:38 --> Unknown column 'peserta.nama' in 'field list'
+CRITICAL - 2021-11-08 20:01:38 --> Unknown column 'peserta.nama' in 'field list'
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT `daytest...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `daytest...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `daytest...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `daytest...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1383): App\Models\GroceryCrudModel->get_list()
+#6 /var/www/app/app/Libraries/GroceryCrud.php(1503): App\Libraries\grocery_CRUD_Model_Driver->get_list()
+#7 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#8 /var/www/app/app/Controllers/Management.php(429): App\Libraries\GroceryCrud->render()
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->daytest()
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-08 20:01:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'test
+FROM `daytest`' at line 1
+CRITICAL - 2021-11-08 20:01:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'test
+FROM `daytest`' at line 1
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT `daytest...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `daytest...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `daytest...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `daytest...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1383): App\Models\GroceryCrudModel->get_list()
+#6 /var/www/app/app/Libraries/GroceryCrud.php(1503): App\Libraries\grocery_CRUD_Model_Driver->get_list()
+#7 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#8 /var/www/app/app/Controllers/Management.php(429): App\Libraries\GroceryCrud->render()
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->daytest()
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-08 20:02:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'test
+FROM `daytest`' at line 1
+CRITICAL - 2021-11-08 20:02:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'test
+FROM `daytest`' at line 1
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT `daytest...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `daytest...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `daytest...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `daytest...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1383): App\Models\GroceryCrudModel->get_list()
+#6 /var/www/app/app/Libraries/GroceryCrud.php(1503): App\Libraries\grocery_CRUD_Model_Driver->get_list()
+#7 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#8 /var/www/app/app/Controllers/Management.php(429): App\Libraries\GroceryCrud->render()
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->daytest()
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

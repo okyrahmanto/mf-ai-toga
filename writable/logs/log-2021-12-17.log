@@ -1,0 +1,14 @@
+CRITICAL - 2021-12-17 01:46:31 --> Undefined offset: 66
+#0 /var/www/app/app/Controllers/Participant.php(200): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/var/www/app/ap...', 200, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->load_question('5')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 01:46:43 --> Undefined offset: 66
+#0 /var/www/app/app/Controllers/Participant.php(200): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/var/www/app/ap...', 200, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->load_question('5')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

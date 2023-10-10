@@ -1,0 +1,36 @@
+CRITICAL - 2021-10-20 02:01:17 --> You must be an administrator to view this page.
+#0 /var/www/app/system/CodeIgniter.php(779): App\Controllers\Management->__construct()
+#1 /var/www/app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-20 02:01:39 --> You must be an administrator to view this page.
+#0 /var/www/app/system/CodeIgniter.php(779): App\Controllers\Management->__construct()
+#1 /var/www/app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-20 02:01:51 --> You must be an administrator to view this page.
+#0 /var/www/app/system/CodeIgniter.php(779): App\Controllers\Management->__construct()
+#1 /var/www/app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-20 02:03:45 --> You must be an administrator to view this page.
+#0 /var/www/app/system/CodeIgniter.php(779): App\Controllers\Management->__construct()
+#1 /var/www/app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-20 02:03:52 --> You must be an administrator to view this page.
+#0 /var/www/app/system/CodeIgniter.php(779): App\Controllers\Management->__construct()
+#1 /var/www/app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-20 02:03:58 --> You must be an administrator to view this page.
+#0 /var/www/app/system/CodeIgniter.php(779): App\Controllers\Management->__construct()
+#1 /var/www/app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

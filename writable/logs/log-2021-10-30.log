@@ -1,0 +1,29 @@
+CRITICAL - 2021-10-30 01:17:18 --> A non-numeric value encountered
+#0 /var/www/app/app/Controllers/Participant.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', '/var/www/app/ap...', 290, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hitung_hasil_cerdas('5')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-30 01:56:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2021-10-30 01:56:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT into has...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT into has...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT into has...')
+#3 /var/www/app/app/Controllers/Participant.php(289): CodeIgniter\Database\BaseConnection->query('INSERT into has...')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hitung_hasil_cerdas('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-10-30 01:56:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2021-10-30 01:56:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT into has...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT into has...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT into has...')
+#3 /var/www/app/app/Controllers/Participant.php(289): CodeIgniter\Database\BaseConnection->query('INSERT into has...')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hitung_hasil_cerdas('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,27 @@
+CRITICAL - 2021-12-28 01:13:14 --> Trying to get property 'id' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 133, Array)
+#1 /var/www/app/app/Controllers/Participant.php(18): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->persiapan_ujian('13')
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-28 01:13:18 --> Trying to get property 'id' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 133, Array)
+#1 /var/www/app/app/Controllers/Participant.php(664): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-28 21:35:51 --> Table 'db_psikotest.keterangan_pertanyaaan' doesn't exist
+CRITICAL - 2021-12-28 21:35:51 --> Table 'db_psikotest.keterangan_pertanyaaan' doesn't exist
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT * FROM k...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM k...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM k...')
+#3 /var/www/app/app/Controllers/Management.php(2213): CodeIgniter\Database\BaseConnection->query('SELECT * FROM k...')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->fixpertanyaan()
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

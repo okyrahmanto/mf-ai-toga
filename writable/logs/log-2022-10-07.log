@@ -1,0 +1,6 @@
+CRITICAL - 2022-10-07 09:11:16 --> Call to undefined method App\Libraries\GroceryCrud::setTitle()
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->submission()
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

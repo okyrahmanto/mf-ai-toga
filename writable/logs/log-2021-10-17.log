@@ -1,0 +1,107 @@
+CRITICAL - 2021-10-17 22:59:04 --> syntax error, unexpected '$this' (T_VARIABLE)
+#0 /var/www/app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute('auth/login')
+#1 /var/www/app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle('auth/login')
+#2 /var/www/app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-17 23:21:58 --> Object of class App\Controllers\Management could not be converted to string
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-17 23:22:28 --> Undefined variable: css_files
+#0 /var/www/app/app/Views/management/user.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 22, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(49): view('management/user', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-17 23:24:06 --> Undefined variable: output
+#0 /var/www/app/app/Views/management/user.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 22, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(49): view('management/user', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-17 23:27:15 --> Undefined variable: user
+#0 /var/www/app/app/Controllers/Management.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 47, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-17 23:27:31 --> Undefined variable: output
+#0 /var/www/app/app/Views/management/user.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 22, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(50): view('management/user', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-17 23:30:54 --> Undefined variable: display_output
+#0 /var/www/app/app/Views/management/user.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 23, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(50): view('management/user', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-17 23:31:17 --> Undefined variable: grocery_crud
+#0 /var/www/app/app/Views/management/user.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 23, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(50): view('management/user', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-17 23:31:41 --> Undefined variable: user
+#0 /var/www/app/app/Views/management/user.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 23, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(50): view('management/user', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-17 23:32:16 --> Undefined variable: output
+#0 /var/www/app/app/Views/management/user.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 23, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(50): view('management/user', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-17 23:49:47 --> Cannot use object of type stdClass as array
+#0 /var/www/app/system/View/View.php(214): include()
+#1 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/user', Array, true)
+#3 /var/www/app/app/Controllers/Management.php(54): view('management/user', Array)
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->users()
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

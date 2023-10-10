@@ -1,0 +1,56 @@
+CRITICAL - 2022-05-26 17:58:32 --> Trying to get property 'id_peserta' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 140, Array)
+#1 /var/www/app/app/Controllers/Participant.php(73): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->ujian('5')
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-26 17:58:39 --> Trying to get property 'id_peserta' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 140, Array)
+#1 /var/www/app/app/Controllers/Participant.php(18): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->persiapan_ujian('17')
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-26 17:58:40 --> Trying to get property 'id_peserta' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 140, Array)
+#1 /var/www/app/app/Controllers/Participant.php(677): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-26 17:58:42 --> Trying to get property 'id_peserta' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 140, Array)
+#1 /var/www/app/app/Controllers/Participant.php(18): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->persiapan_ujian('11')
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-26 17:58:47 --> Trying to get property 'id_peserta' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 140, Array)
+#1 /var/www/app/app/Controllers/Participant.php(321): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hasil_ujian('7')
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-26 17:58:48 --> Trying to get property 'id_peserta' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 140, Array)
+#1 /var/www/app/app/Controllers/Participant.php(18): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->persiapan_ujian('9')
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-26 17:58:49 --> Trying to get property 'id_peserta' of non-object
+#0 /var/www/app/app/Controllers/Participant.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 140, Array)
+#1 /var/www/app/app/Controllers/Participant.php(677): App\Controllers\Participant->getIdPesertaByIdUser()
+#2 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#3 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#4 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

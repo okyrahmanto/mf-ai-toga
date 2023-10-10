@@ -1,0 +1,81 @@
+CRITICAL - 2021-12-13 08:40:35 --> Undefined property: App\Controllers\Participant::$getIdPesertaByIdUser
+#0 /var/www/app/app/Controllers/Participant.php(490): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/var/www/app/ap...', 490, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 08:41:14 --> Undefined property: App\Controllers\Participant::$getIdPesertaByIdUser
+#0 /var/www/app/app/Controllers/Participant.php(490): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/var/www/app/ap...', 490, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 08:41:25 --> Undefined variable: grocery_crud
+#0 /var/www/app/app/Controllers/Participant.php(494): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 494, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 08:41:34 --> Undefined index: id_daytest
+#0 /var/www/app/app/Views/participant/user_daytest.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/app/ap...', 112, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('participant/use...', Array, true)
+#4 /var/www/app/app/Controllers/Participant.php(496): view('participant/use...', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 08:42:04 --> Undefined property: mysqli::$keterangan
+#0 /var/www/app/app/Views/participant/user_daytest.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/var/www/app/ap...', 133, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('participant/use...', Array, true)
+#4 /var/www/app/app/Controllers/Participant.php(496): view('participant/use...', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 08:43:01 --> Undefined property: mysqli::$tanggal
+#0 /var/www/app/app/Views/participant/user_daytest.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/var/www/app/ap...', 134, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('participant/use...', Array, true)
+#4 /var/www/app/app/Controllers/Participant.php(496): view('participant/use...', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-13 08:48:21 --> Unknown column 'peserta.id_peserta' in 'where clause'
+CRITICAL - 2021-12-13 08:48:21 --> Unknown column 'peserta.id_peserta' in 'where clause'
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT `daytest...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `daytest...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `daytest...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `daytest...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1383): App\Models\GroceryCrudModel->get_list()
+#6 /var/www/app/app/Libraries/GroceryCrud.php(1503): App\Libraries\grocery_CRUD_Model_Driver->get_list()
+#7 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#8 /var/www/app/app/Controllers/Participant.php(483): App\Libraries\GroceryCrud->render()
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hari_ujian()
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-13 09:44:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'return confirm('  limit 0,1' at line 1
+CRITICAL - 2021-12-13 09:44:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'return confirm('  limit 0,1' at line 1
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT jenis_uj...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT jenis_uj...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT jenis_uj...')
+#3 /var/www/app/app/Controllers/Participant.php(250): CodeIgniter\Database\BaseConnection->query('SELECT jenis_uj...')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hasil_ujian('5 onclick='retu...', '' Apakah anda Y...', '')')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

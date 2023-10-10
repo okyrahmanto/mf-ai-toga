@@ -1,0 +1,13 @@
+CRITICAL - 2021-12-07 01:11:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRows()
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hasil_ujian('7')
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-07 01:11:31 --> Undefined property: stdClass::$nilai_jawaban
+#0 /var/www/app/app/Controllers/Participant.php(288): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/var/www/app/ap...', 288, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->hasil_ujian('7')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

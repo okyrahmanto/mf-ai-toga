@@ -1,0 +1,68 @@
+CRITICAL - 2023-09-10 12:00:37 --> Too few arguments to function App\Libraries\GroceryCrud::setActionButton(), 3 passed in /var/www/app/app/Controllers/Management.php on line 76 and at least 4 expected
+#0 /var/www/app/app/Controllers/Management.php(76): App\Libraries\GroceryCrud->setActionButton('test', '#', '')
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->database()
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-10 12:02:59 --> Trying to get property 'id_tugas_akhir' of non-object
+#0 /var/www/app/app/Controllers/Management.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 77, Array)
+#1 [internal function]: App\Controllers\Management->App\Controllers\{closure}('1', Object(stdClass))
+#2 /var/www/app/app/Libraries/GroceryCrud.php(1724): call_user_func(Object(Closure), '1', Object(stdClass))
+#3 /var/www/app/app/Libraries/GroceryCrud.php(1505): App\Libraries\grocery_CRUD_Layout->change_list_add_actions(Array)
+#4 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#5 /var/www/app/app/Controllers/Management.php(80): App\Libraries\GroceryCrud->render()
+#6 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->database()
+#7 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#8 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-10 12:03:14 --> Trying to get property 'id' of non-object
+#0 /var/www/app/app/Controllers/Management.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/var/www/app/ap...', 77, Array)
+#1 [internal function]: App\Controllers\Management->App\Controllers\{closure}('1', Object(stdClass))
+#2 /var/www/app/app/Libraries/GroceryCrud.php(1724): call_user_func(Object(Closure), '1', Object(stdClass))
+#3 /var/www/app/app/Libraries/GroceryCrud.php(1505): App\Libraries\grocery_CRUD_Layout->change_list_add_actions(Array)
+#4 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#5 /var/www/app/app/Controllers/Management.php(80): App\Libraries\GroceryCrud->render()
+#6 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->database()
+#7 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#8 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-10 12:20:18 --> Invalid file: plagiarism/upload.php
+#0 /var/www/app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plagiarism/uplo...')
+#1 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('plagiarism/uplo...', Array, true)
+#2 /var/www/app/app/Controllers/Management.php(197): view('plagiarism/uplo...', Array)
+#3 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->upload('33')
+#4 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#5 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-10 12:23:59 --> Too few arguments to function App\Controllers\Management::upload_berkas(), 0 passed in /var/www/app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->upload_berkas()
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-09-10 12:24:43 --> Table 'db_plagiarism.database' doesn't exist
+CRITICAL - 2023-09-10 12:24:43 --> Table 'db_plagiarism.database' doesn't exist
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('UPDATE `databas...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `databas...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `databas...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `databas...', Array, false)
+#4 /var/www/app/app/Controllers/Management.php(225): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->upload_berkas('33')
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 12:31:26 --> mime_ext is not a valid rule.
+#0 /var/www/app/system/Validation/Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('mime_ext')
+#1 /var/www/app/system/Validation/Validation.php(151): CodeIgniter\Validation\Validation->processRules('file', 'file', NULL, Array, Array)
+#2 /var/www/app/system/Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 /var/www/app/app/Controllers/Management.php(208): CodeIgniter\Controller->validate(Array)
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->upload_berkas('33')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,150 @@
+CRITICAL - 2021-10-19 01:19:35 --> Undefined variable: css_files
+#0 /var/www/app/app/Views/management/ujian.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 22, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/ujia...', Array, true)
+#4 /var/www/app/app/Controllers/Management.php(137): view('management/ujia...', Array)
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->kelola_ujian()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-19 01:20:01 --> Undefined variable: user
+#0 /var/www/app/app/Views/management/header.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 469, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/head...', Array, true)
+#4 /var/www/app/app/Views/management/pertanyaan.php(96): view('management/head...')
+#5 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#6 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/pert...', Array, true)
+#8 /var/www/app/app/Controllers/Management.php(204): view('management/pert...', Array)
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->pertanyaan_ujian()
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-10-19 01:31:27 --> Undefined property: stdClass::$id
+#0 /var/www/app/app/Controllers/Management.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/var/www/app/ap...', 139, Array)
+#1 [internal function]: App\Controllers\Management->App\Controllers\{closure}(NULL, Object(stdClass))
+#2 /var/www/app/app/Libraries/GroceryCrud.php(1744): call_user_func(Object(Closure), NULL, Object(stdClass))
+#3 /var/www/app/app/Libraries/GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list(Array, Array)
+#4 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#5 /var/www/app/app/Controllers/Management.php(146): App\Libraries\GroceryCrud->render()
+#6 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->kelola_ujian()
+#7 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#8 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-19 01:31:38 --> Object of class stdClass could not be converted to string
+#0 [internal function]: App\Controllers\Management->App\Controllers\{closure}(NULL, Object(stdClass))
+#1 /var/www/app/app/Libraries/GroceryCrud.php(1744): call_user_func(Object(Closure), NULL, Object(stdClass))
+#2 /var/www/app/app/Libraries/GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list(Array, Array)
+#3 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#4 /var/www/app/app/Controllers/Management.php(146): App\Libraries\GroceryCrud->render()
+#5 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->kelola_ujian()
+#6 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#7 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-19 01:34:03 --> syntax error, unexpected '}', expecting ';'
+#0 /var/www/app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute('management/kelo...')
+#1 /var/www/app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle('management/kelo...')
+#2 /var/www/app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-19 01:35:21 --> Invalid file: management/kelola.php
+#0 /var/www/app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('management/kelo...')
+#1 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/kelo...', Array, true)
+#2 /var/www/app/app/Controllers/Management.php(152): view('management/kelo...', Array)
+#3 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->kelola_ujian()
+#4 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#5 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-19 01:51:35 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /var/www/app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute('management/upda...')
+#1 /var/www/app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle('management/upda...')
+#2 /var/www/app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-19 02:54:31 --> Argument 1 passed to App\Libraries\GroceryCrud::where() must be of the type string, array given, called in /var/www/app/app/Controllers/Management.php on line 359
+#0 /var/www/app/app/Controllers/Management.php(359): App\Libraries\GroceryCrud->where(Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->pertanyaan_ujian('2')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-19 02:55:14 --> Argument 1 passed to App\Libraries\GroceryCrud::where() must be of the type string, array given, called in /var/www/app/app/Controllers/Management.php on line 359
+#0 /var/www/app/app/Controllers/Management.php(359): App\Libraries\GroceryCrud->where(Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->pertanyaan_ujian('1')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-19 03:02:28 --> insertBatch() called with no data
+#0 /var/www/app/app/Controllers/Management.php(345): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->update_ujian_peserta()
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-19 03:41:42 --> Undefined variable: user
+#0 /var/www/app/app/Views/management/header.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 469, Array)
+#1 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#2 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/head...', Array, true)
+#4 /var/www/app/app/Views/management/main.php(93): view('management/head...')
+#5 /var/www/app/system/View/View.php(214): include('/var/www/app/ap...')
+#6 /var/www/app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /var/www/app/system/Common.php(1092): CodeIgniter\View\View->render('management/main', Array, true)
+#8 /var/www/app/app/Controllers/Management.php(55): view('management/main')
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->index()
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-10-19 08:03:52 --> You must be an administrator to view this page.
+#0 /var/www/app/system/CodeIgniter.php(779): App\Controllers\Management->__construct()
+#1 /var/www/app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-19 08:04:34 --> Undefined variable: id_ujian
+#0 /var/www/app/app/Controllers/Participant.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 22, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->daftar_ujian()
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-19 08:04:41 --> Undefined variable: id_ujian
+#0 /var/www/app/app/Controllers/Participant.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/app/ap...', 22, Array)
+#1 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->daftar_ujian('1')
+#2 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#3 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-19 08:06:01 --> Class 'App\Controllers\GroceryCrud' not found
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->daftar_ujian('1')
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-10-19 08:15:00 --> Column 'id_peserta' in where clause is ambiguous
+CRITICAL - 2021-10-19 08:15:00 --> Column 'id_peserta' in where clause is ambiguous
+#0 /var/www/app/system/Database/MySQLi/Connection.php(280): mysqli->query('SELECT `peserta...')
+#1 /var/www/app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peserta...')
+#2 /var/www/app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peserta...')
+#3 /var/www/app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `peserta...', Array, false)
+#4 /var/www/app/app/Models/GroceryCrudModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/app/Libraries/GroceryCrud.php(1383): App\Models\GroceryCrudModel->get_list()
+#6 /var/www/app/app/Libraries/GroceryCrud.php(1503): App\Libraries\grocery_CRUD_Model_Driver->get_list()
+#7 /var/www/app/app/Libraries/GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+#8 /var/www/app/app/Controllers/Participant.php(47): App\Libraries\GroceryCrud->render()
+#9 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Participant->daftar_ujian()
+#10 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Participant))
+#11 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

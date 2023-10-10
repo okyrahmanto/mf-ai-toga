@@ -1,0 +1,76 @@
+CRITICAL - 2021-12-24 00:05:25 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('5')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('5')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-24 03:41:12 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 815, Array)
+#1 /var/www/app/app/Controllers/Management.php(815): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(881): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('14')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('14')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-24 03:42:50 --> Call to undefined method App\Controllers\Management::generatenullnorma()
+#0 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('14')
+#1 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#2 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-24 03:43:09 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 816, Array)
+#1 /var/www/app/app/Controllers/Management.php(816): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(882): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('14')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('14')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-24 03:46:58 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 816, Array)
+#1 /var/www/app/app/Controllers/Management.php(816): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(887): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('14')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('14')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-24 03:48:04 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 816, Array)
+#1 /var/www/app/app/Controllers/Management.php(816): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(887): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('14')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('14')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-24 03:49:07 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 816, Array)
+#1 /var/www/app/app/Controllers/Management.php(816): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(887): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('14')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('14')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-24 03:50:25 --> bcdiv(): Division by zero
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'bcdiv(): Divisi...', '/var/www/app/ap...', 816, Array)
+#1 /var/www/app/app/Controllers/Management.php(816): bcdiv('0', '0', 18)
+#2 /var/www/app/app/Controllers/Management.php(887): App\Controllers\Management->std_deviation(Array)
+#3 /var/www/app/app/Controllers/Management.php(748): App\Controllers\Management->setnormastdmeancerdas('14')
+#4 /var/www/app/system/CodeIgniter.php(802): App\Controllers\Management->hitung_hasil_test('14')
+#5 /var/www/app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management))
+#6 /var/www/app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -40,6 +40,43 @@
 <?php
   //print_r($toga['name']);
 ?>
+<script>
+    let lang="IDN";
+    const name="<?= $toga['name'] ?>";
+    const name_en="<?= $toga['name_en'] ?>";
+    const name_latin="<?= $toga['name_latin'] ?>";
+    const bahan_berkhasiat="<?= $toga['bahan_berkhasiat'] ?>";
+    const bahan_berkhasiat_en="<?= $toga['bahan_berkhasiat_en'] ?>";
+    const khasiat="<?= $toga['khasiat'] ?>";
+    const khasiat_en="<?= $toga['khasiat_en'] ?>";
+    const head_khasiat_en = "efficacy";
+    const head_bahan_berkhasiat_en = "The useful part";
+    const head_khasiat = "Khasiat";
+    const head_bahan_berkhasiat = "Bahan berkhasiat";
+
+    function toogleLang() {
+      if (lang=="IDN") {
+        lang="ENG";
+        document.getElementById("toga-name").innerHTML = name_en;
+        document.getElementById("toga-name-latin").innerHTML = name_latin;
+        document.getElementById("toga-head-bahan-berkhasiat").innerHTML = head_bahan_berkhasiat_en;
+        document.getElementById("toga-bahan-berkhasiat").innerHTML = bahan_berkhasiat_en;
+        document.getElementById("toga-head-khasiat").innerHTML = head_khasiat_en;
+        document.getElementById("toga-khasiat").innerHTML= khasiat_en;
+      } else {
+        lang="IDN";
+        document.getElementById("toga-name").innerHTML = name;
+        document.getElementById("toga-name-latin").innerHTML = name_latin;
+        document.getElementById("toga-head-bahan-berkhasiat").innerHTML = head_bahan_berkhasiat;
+        document.getElementById("toga-bahan-berkhasiat").innerHTML = bahan_berkhasiat;
+        document.getElementById("toga-head-khasiat").innerHTML = head_khasiat;
+        document.getElementById("toga-khasiat").innerHTML= khasiat;
+      }
+    }
+
+
+    
+  </script>
 <body class="g-sidenav-show bg-gray-100">
   
   <div class="main-content position-relative bg-gray-100 max-height-vh-100 h-100">
@@ -55,11 +92,11 @@
           
           <div style="margin:auto; text-align:center" class="col-auto my-auto">
             <div class="h-100">
-              <h5 class="mb-1">
+              <h5 class="mb-1" id="toga-name">
                 <?php echo $toga['name']?>
               </h5>
               <p class="mb-0 font-weight-bold text-sm">
-                <i><?php echo $toga['name_latin']?></i>
+                <i id="toga-name-latin"><?php echo $toga['name_latin']?></i>
               </p>
             </div>
           </div>
@@ -87,7 +124,7 @@
                     <span class="ms-1">Settings</span>
                   </a> -->
                   <div class="form-check form-switch">
-                  <input style="float:none;" class="form-check-input" type="checkbox" id="toggleLanguage" checked="">
+                  <input style="float:none;" onclick="toogleLang()" class="form-check-input" type="checkbox" id="toggleLanguage">
                       <label class="form-check-label" for="toggleLanguage">IND - ENG</label>
                   </div>
                 </li>
@@ -104,12 +141,12 @@
         <div class="col-12 mt-4">
           <div class="card mb-4">
             <div class="card-header pb-0 p-3">
-              <h6 class="mb-1">Bahan berkhasiat</h6>
-              <p class="text-sm"><?php echo $toga['bahan_berkhasiat']?></p>
+              <h6 class="mb-1" id="toga-head-bahan-berkhasiat">Bahan berkhasiat</h6>
+              <p class="text-sm" id="toga-bahan-berkhasiat"><?php echo $toga['bahan_berkhasiat']?></p>
             </div>
             <div class="card-body p-3">
               <div class="row">
-                <div class="col-sm-3 col-md-3 col-xl-3 col-md-6 mb-xl-0 mb-4">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-xl-4 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -135,9 +172,9 @@
                             $number = 0;
                             foreach ($gambar as $imgRow) {
                               if ($number == 0) {
-                                echo '<div class="carousel-item active"> <img src="'.base_url().'/uploads/'.$imgRow['url'].'" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></div>';
+                                echo '<div class="text-center carousel-item active"> <img  style="object-fit: cover; height: 400px; !important; " src="'.base_url().'/uploads/'.$imgRow['url'].'" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl center-block"></div>';
                               } else {
-                                echo '<div class="carousel-item"><img src="'.base_url().'/uploads/'.$imgRow['url'].'" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl"></div>';
+                                echo '<div class="text-center carousel-item"><img  style="object-fit: cover; height: 400px; !important; " src="'.base_url().'/uploads/'.$imgRow['url'].'" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl center-block"></div>';
                               }
                               $number++;
                             }
@@ -164,11 +201,11 @@
                     </div>
                     <div class="card-body px-1 pb-0">
                       
-                        <h5>
+                        <h5 id="toga-head-khasiat">
                           Khasiat
                         </h5>
                       
-                      <p class="mb-4 text-sm">
+                      <p class="mb-4 text-sm text-justify" id="toga-khasiat">
                       <?php echo $toga['khasiat']?>
                       </p>
                       <!-- <div class="d-flex align-items-center justify-content-between">
@@ -242,6 +279,7 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="<?php echo base_url(); ?>/soft-ui/assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+  
 </body>
 
 </html>

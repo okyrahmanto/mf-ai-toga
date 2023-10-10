@@ -26,14 +26,14 @@
 						</a>
 					<?php }
 				} ?>
-
+				<br>
 				<?php if(!$unset_read){?>
 					<a href="<?php echo $row->read_url?>" class="edit_button btn btn-xs btn-info btn-sm" role="button">
 						<i class="fas fa-info-circle"></i>
 						<?php echo $this->l('list_view');?>
 					</a>
 				<?php }?>
-					<br>
+					
                 <?php if(!$unset_clone){?>
                     <a href="<?php echo $row->clone_url?>" class="edit_button btn btn-xs btn-info btn-sm hidden-xs" role="button">
                         <i class="fas fa-copy"></i>

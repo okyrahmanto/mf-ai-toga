@@ -36,7 +36,8 @@
   <!-- Nepcha Analytics (nepcha.com) -->
   <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
   <!-- <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script> -->
-  <script src="<?php echo base_url(); ?>/qrcode/easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+  <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+ 
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -57,18 +58,23 @@
             
             <div class="card-body p-3">
               <div class="row">
-                <div class="col-xl-12 col-md-12 mb-xl-0 mb-4">
+                <div class="col-lg-12 col-xl-12 col-md-12 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     
                     
                     <div style="margin:auto; text-align:center" class="col-auto my-auto">
                       <div class="h-100">
                         <h5 class="mb-1">
-                          <?php echo $name; ?>
+                          Images
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                          <i><?php echo $name_latin; ?></i>
+                          
                         </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-xl-0 mb-4">
+                      <div class="card h-100 card-plain border dropzone">
+                        
                       </div>
                     </div>
                     <div style="margin:auto;"class="position-relative" id="container">
@@ -119,7 +125,61 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="<?php echo base_url(); ?>/soft-ui/assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
-  <script type="text/template" id="qrcodeTpl">
+  <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    const dropzone = new Dropzone("div.dropzone", { url: "<?php echo base_url(); ?>/management/upload/<?php echo $id;?>",
+      addRemoveLinks: true,
+      removedfile: function(file) {
+        var name = file.name; 
+        
+        $.ajax({
+          type: 'POST',
+          url: '<?php echo base_url();?>/management/softDeletefile/<?php echo $id;?>',
+          data: {name: name},
+          sucess: function(data){
+              console.log('success: ' + data);
+          }
+        });
+        var _ref;
+          return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+      }
+    });
+    // callback and crossOrigin are optional
+    // dropzone({
+    //   addRemoveLinks: true,
+    //   removedfile: function(file) {
+    //     var name = file.name; 
+        
+    //     $.ajax({
+    //       type: 'POST',
+    //       url: 'upload.php',
+    //       data: {name: name,request: 2},
+    //       sucess: function(data){
+    //           console.log('success: ' + data);
+    //       }
+    //     });
+    //     var _ref;
+    //       return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+    //   }
+    //   });
+    <?php
+      
+      foreach ($gambar as $imgRow) {
+        //$imgName = explode($imgRow['url']);
+
+        echo 'dropzone.displayExistingFile({ name: "'.$imgRow["url"].'", size: 12345 }, "'.base_url().'/uploads/'.$imgRow["url"].'");'.PHP_EOL;
+        
+      }
+    ?>
+    // let mockFile = { name: "Filename", size: 12345 };
+    // let mockFile2 = { name: "Filename", size: 12345 };
+    // dropzone.displayExistingFile(mockFile, '<?php echo base_url()?>/uploads/');
+    // dropzone.displayExistingFile(mockFile2, 'https://image-url');
+  
+  </script>
+  
+  <!-- <script type="text/template" id="qrcodeTpl">
 			<div class="imgblock">
 				<div class="title">{title}</div>
 				<div class="qr" id="qrcode_{i}"></div>
@@ -128,14 +188,14 @@
                 </div>
                 
 			</div>
-		</script>
-  <script type="text/javascript">
+		</script> -->
+  <!-- <script type="text/javascript">
     var demoParams = [
 				
 				{
 					title: "<?php //echo $nama; ?>",
 					config: {
-						text: "http://mf-ai.politala.ac.id/toga/viewqr/<?php echo $id;?>", // Content
+						text: "http://mf-ai.politala.ac.id/toga/viewqr/", // Content
 
 						width: 280, // Widht
 						height: 280, // Height
@@ -185,7 +245,8 @@
                 
             }
       
-  </script>
+  </script> -->
+
 </body>
 
 </html>

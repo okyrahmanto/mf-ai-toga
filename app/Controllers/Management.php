@@ -78,13 +78,17 @@ class Management extends AuthController
 		$crud->displayAs('name_en','Nama (Inggris)');
 		$crud->displayAs('khasiat_en','Khasiat (Inggris)');
 		$crud->displayAs('bahan_berkhasiat_en','Bahan Berkhasiat (Inggris)');
-		// $crud->setActionButton('Foto', 'fa fa-user', function ($row) {
-		// 	return '/management/upload/'.$row;
-		// }, true);
+		$crud->setActionButton('Toga', 'fa fa-user', function ($row) {
+		 	return '/toga/view/'.$row;
+		}, true);
 
 		$crud->setActionButton('QRcode', 'fa fa-user', function ($row) {
 			return '/toga/viewqr/'.$row;
 		}, true);
+
+		$crud->setActionButton('Images', 'fa fa-user', function ($row) {
+			return '/management/images/'.$row;
+	   }, true);
 
 		$output = $crud->render();
 		$grocery_crud = array("output"=>$output);
@@ -227,13 +231,64 @@ class Management extends AuthController
 		return view('togamf/main-grocery', $display_output);
 	}
 
-	function upload($id) { 
-        $user  = $this->ionAuth->user()->row();
-		$display_output = ["user"=>$user,"id"=>$id];
-        return view('plagiarism/upload_file',$display_output);
+	public function upload($id=null) { 
+        $ds          = DIRECTORY_SEPARATOR;  //1
+		$storeFolder = 'uploads';   //2
+		if (!empty($_FILES)) {
+			$guid = new Guid();
+
+            //generate unique name 
+            $uniqueName = substr($guid->GUIDv4(), 0, 5);
+
+			$tempFile = $_FILES['file']['tmp_name'];          //3             
+			
+			$targetPath = dirname( __FILE__ ) . $ds.'../../public/'. $storeFolder . $ds;  //4
+			
+			$fileNameTarget = $uniqueName.'-'.$_FILES['file']['name'];
+
+			$targetFile =  $targetPath.$fileNameTarget;  //5
+		
+			move_uploaded_file($tempFile,$targetFile); //6
+
+			$database = \Config\Database::connect();
+        	$db = $database->table('gambar');
+			// insert into gambar table
+			$data = [
+				// 'id' => 0,
+				'url'    => $fileNameTarget,
+				'id_toga' => $id,
+				'is_head' => 0,
+			];
+			$db->insert($data);
+	
+			// $gambarModel = new \App\Models\GambarModel();
+
+			// return $gambarModel->insert($data, false);
+			
+		}
     }
 
-	function upload_berkas($id) { 
+	public function softDeleteFile($id=null) { 
+
+		$fileUrl = $_POST['name']; 
+       
+			$database = \Config\Database::connect();
+        	$db = $database->table('gambar');
+			$db->where('url', $fileUrl );
+			$db->delete();
+    }
+
+	public function images($id) { 
+        // $user  = $this->ionAuth->user()->row();
+		// $display_output = ["user"=>$user,"id"=>$id];
+
+		$gambarModel = new \App\Models\GambarModel();
+        $gambar = $gambarModel->where('id_toga', $id)->findAll();
+		$display_output = ["id"=>$id,"gambar"=>$gambar];
+        return view('togamf/produk-gambar',$display_output);
+    }
+
+	function upload_berkas($id=null) { 
         helper(['form', 'url']);
          
         $database = \Config\Database::connect();
@@ -242,8 +297,7 @@ class Management extends AuthController
         $input = $this->validate([
             'file' => [
                 'uploaded[file]',
-                'mime_in[file,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf]',
-				'ext_in[file,doc,docx,pdf]',
+				'ext_in[jpeg,jpg,png,svg,webp]',
                 'max_size[file,20024]',
             ]
         ]);
@@ -254,14 +308,14 @@ class Management extends AuthController
             $img = $this->request->getFile('file');
             $img->move(WRITEPATH . 'uploads');
     
-            $data = [
-               'berkas' =>  $img->getName(),
-               'jenis_berkas'  => $img->getClientMimeType()
-            ];
-			$db->where('id_tugas_akhir', $id);
-            $update = $db->update($data);
+            // $data = [
+            //    'berkas' =>  $img->getName(),
+            //    'jenis_berkas'  => $img->getClientMimeType()
+            // ];
+			// $db->where('id_tugas_akhir', $id);
+            // $update = $db->update($data);
 
-            print_r('File has successfully uploaded');        
+            // print_r('File has successfully uploaded');        
         }
     }
 	

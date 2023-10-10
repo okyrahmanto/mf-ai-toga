@@ -120,7 +120,7 @@
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="<?php echo base_url(); ?>/soft-ui/assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
   <script type="text/template" id="qrcodeTpl">
-			<div class="imgblock">
+			<div class="img-fluid imgblock ">
 				<div class="title">{title}</div>
 				<div class="qr" id="qrcode_{i}"></div>
                 <div class="text-center" id="qrcode_{i}_download">

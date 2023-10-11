@@ -35,10 +35,7 @@ class Management extends AuthController
 
 	}
 
-    private function _viewManagementUser($output = null) {
-        return view('management/user', (array)$output);
-    }
-
+  
     public function index()
     {
 		//$ionAuth = new IonAuth();
@@ -100,73 +97,7 @@ class Management extends AuthController
 
 
 
-	public function database()
-	{
-	    $crud = new GroceryCrud();
-
-	    $crud->setTable('tugas_akhir');
-        $crud->setTheme('tablestrap4');
-        $crud->unsetJquery();
-        $crud->unsetBootstrap();
-		$crud->setActionButton('Berkas', 'fa fa-user', function ($row) {
-			// echo "<pre>";
-			// print_r($row);
-			// echo "<pre>";
-			return '/management/upload/'.$row;
-		}, true);
-
-		$output = $crud->render();
-		$grocery_crud = array("output"=>$output);
-		$user  = $this->ionAuth->user()->row();
-		$display_output = ["grocery_crud"=>$grocery_crud,"user"=>$user];
-
-		return view('plagiarism/user', $display_output);
-	}
-
-	public function submission()
-	{
-	    $crud = new GroceryCrud();
-
-	    $crud->setTable('submission');
-		$crud->setSubject('submission');
-        $crud->setTheme('tablestrap4');
-		$crud->columns(['owner_name','judul','abstrak','kata_kunci','similiarity_judul','similiarity_abstrak','similiarity_kata_kunci']);
-        $crud->unsetAddFields(['similiarity_judul','similiarity_abstrak','similiarity_kata_kunci','is_checked','input_time','start_time','finish_time']);
-		$crud->unsetEditFields(['similiarity_judul','similiarity_abstrak','similiarity_kata_kunci','is_checked','input_time','start_time','finish_time']);
-		$crud->callbackColumn('similiarity_judul', function ($value, $row) {
-			if ($row->similiarity_judul<0) {
-				return 'Not Checked Yet';
-			} else {
-				return $row->similiarity_judul;
-			}
-		});
-		$crud->callbackColumn('similiarity_abstrak', function ($value, $row) {
-			if ($row->similiarity_abstrak<0) {
-				return 'Not Checked Yet';
-			} else {
-				return $row->similiarity_abstrak;
-			}
-		});
-		$crud->callbackColumn('similiarity_kata_kunci', function ($value, $row) {
-			if ($row->similiarity_kata_kunci<0) {
-				return 'Not Checked Yet';
-			} else {
-				return $row->similiarity_kata_kunci;
-			}
-		});
-		//$crud->setRelation('id_jenis_pertanyaan','jenis_pertanyaan','nama_jenis');
-		$crud->setTexteditor(['judul','abstrak']);
-		//$crud->displayAs('id_jenis_pertanyaan','Jenis Pertanyaan');
-        $crud->unsetJquery();
-        $crud->unsetBootstrap();
-
-		$output = $crud->render();
-		$grocery_crud = array("output"=>$output);
-		$user  = $this->ionAuth->user()->row();
-		$display_output = ["grocery_crud"=>$grocery_crud,"user"=>$user];
-
-		return view('plagiarism/user', $display_output);
-	}
+	
 
     public function users()
 	{
@@ -288,36 +219,6 @@ class Management extends AuthController
         return view('togamf/produk-gambar',$display_output);
     }
 
-	function upload_berkas($id=null) { 
-        helper(['form', 'url']);
-         
-        $database = \Config\Database::connect();
-        $db = $database->table('tugas_akhir');
-    
-        $input = $this->validate([
-            'file' => [
-                'uploaded[file]',
-				'ext_in[jpeg,jpg,png,svg,webp]',
-                'max_size[file,20024]',
-            ]
-        ]);
-    
-        if (!$input) {
-            print_r('Choose a valid file');
-        } else {
-            $img = $this->request->getFile('file');
-            $img->move(WRITEPATH . 'uploads');
-    
-            // $data = [
-            //    'berkas' =>  $img->getName(),
-            //    'jenis_berkas'  => $img->getClientMimeType()
-            // ];
-			// $db->where('id_tugas_akhir', $id);
-            // $update = $db->update($data);
-
-            // print_r('File has successfully uploaded');        
-        }
-    }
 	
 	
 

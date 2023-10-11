@@ -47,7 +47,7 @@
     const name_latin="<?= $toga['name_latin'] ?>";
     const bahan_berkhasiat="<?= $toga['bahan_berkhasiat'] ?>";
     const bahan_berkhasiat_en="<?= $toga['bahan_berkhasiat_en'] ?>";
-    const khasiat="<?= $toga['khasiat'] ?>";
+    const khasiat="<?= trim($toga['khasiat']," ") ?>";
     const khasiat_en="<?= $toga['khasiat_en'] ?>";
     const head_khasiat_en = "efficacy";
     const head_bahan_berkhasiat_en = "The useful part";

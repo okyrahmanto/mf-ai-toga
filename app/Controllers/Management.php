@@ -72,9 +72,11 @@ class Management extends AuthController
         $crud->unsetBootstrap();
 		$crud->displayAs('name_latin','Nama Latin');
 		$crud->displayAs('name','Nama');
+		$crud->displayAs('deskripsi_lainnya','Deskripsi Lainnya');
 		$crud->displayAs('name_en','Nama (Inggris)');
 		$crud->displayAs('khasiat_en','Khasiat (Inggris)');
 		$crud->displayAs('bahan_berkhasiat_en','Bahan Berkhasiat (Inggris)');
+		$crud->displayAs('deskripsi_lainnya_en','Deskripsi Lainnya (Inggris)');
 		$crud->setActionButton('Toga', 'fa fa-user', function ($row) {
 		 	return '/toga/view/'.$row;
 		}, true);

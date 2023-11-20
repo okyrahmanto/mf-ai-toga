@@ -42,21 +42,23 @@
 ?>
 <script>
     let lang="IDN";
-    const name="<?= $toga['name'] ?>";
-    const name_en="<?= $toga['name_en'] ?>";
-    const name_latin="<?= $toga['name_latin'] ?>";
-    const bahan_berkhasiat="<?= $toga['bahan_berkhasiat'] ?>";
-    const bahan_berkhasiat_en="<?= $toga['bahan_berkhasiat_en'] ?>";
-    const khasiat="<?= trim($toga['khasiat']," ") ?>";
-    const khasiat_en="<?= $toga['khasiat_en'] ?>";
+    const name="<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['name']) ?>";
+    const name_en="<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['name_en']) ?>";
+    const name_latin="<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['name_latin']) ?>";
+    const bahan_berkhasiat="<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['bahan_berkhasiat']) ?>";
+    const bahan_berkhasiat_en="<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['bahan_berkhasiat_en']) ?>";
+    const khasiat="<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",trim($toga['khasiat']," ")) ?>";
+    const khasiat_en="<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['khasiat_en']) ?>";
     const head_khasiat_en = "efficacy";
     const head_bahan_berkhasiat_en = "The useful part";
     const head_khasiat = "Khasiat";
     const head_bahan_berkhasiat = "Bahan berkhasiat";
     const head_deskripsi_lainnya = "Deskripsi lainnya";
     const head_deskripsi_lainnya_en = "Description";
-    const deskripsi_lainnya = "<?= $toga['deskripsi_lainnya'] ?>";
-    const deskripsi_lainnya_en = "<?= htmlspecialchars($toga['deskripsi_lainnya_en']) ?>";
+    const deskripsi_lainnya = "<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['deskripsi_lainnya']); ?>";
+    const deskripsi_lainnya_en = "<?= str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n")," <br> ",$toga['deskripsi_lainnya_en']); ?>";
+
+    
 
     function toogleLang() {
       if (lang=="IDN") {
@@ -222,7 +224,7 @@
                         </h5>
                       
                       <p class="mb-4 text-sm text-justify" id="toga-deskripsi">
-                      <?php echo $toga['khasiat']?>
+                      <?php echo $toga['deskripsi_lainnya']?>
                       </p>
                       <!-- <div class="d-flex align-items-center justify-content-between">
                         <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>

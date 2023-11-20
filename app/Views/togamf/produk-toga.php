@@ -53,6 +53,10 @@
     const head_bahan_berkhasiat_en = "The useful part";
     const head_khasiat = "Khasiat";
     const head_bahan_berkhasiat = "Bahan berkhasiat";
+    const head_deskripsi_lainnya = "Deskripsi lainnya";
+    const head_deskripsi_lainnya_en = "Description";
+    const deskripsi_lainnya = "<?= $toga['deskripsi_lainnya'] ?>";
+    const deskripsi_lainnya_en = "<?= $toga['deskripsi_lainnya_en'] ?>";
 
     function toogleLang() {
       if (lang=="IDN") {
@@ -63,6 +67,8 @@
         document.getElementById("toga-bahan-berkhasiat").innerHTML = bahan_berkhasiat_en;
         document.getElementById("toga-head-khasiat").innerHTML = head_khasiat_en;
         document.getElementById("toga-khasiat").innerHTML= khasiat_en;
+        document.getElementById("toga-head-deskripsi").innerHTML= head_deskripsi_lainnya_en;
+        document.getElementById("toga-deskripsi").innerHTML= deskripsi_lainnya_en;
       } else {
         lang="IDN";
         document.getElementById("toga-name").innerHTML = name;
@@ -71,6 +77,8 @@
         document.getElementById("toga-bahan-berkhasiat").innerHTML = bahan_berkhasiat;
         document.getElementById("toga-head-khasiat").innerHTML = head_khasiat;
         document.getElementById("toga-khasiat").innerHTML= khasiat;
+        document.getElementById("toga-head-deskripsi").innerHTML= head_deskripsi_lainnya;
+        document.getElementById("toga-deskripsi").innerHTML= deskripsi_lainnya;
       }
     }
 
@@ -206,6 +214,14 @@
                         </h5>
                       
                       <p class="mb-4 text-sm text-justify" id="toga-khasiat">
+                      <?php echo $toga['khasiat']?>
+                      </p>
+
+                      <h5 id="toga-head-deskripsi">
+                          Deskripsi Lainnya
+                        </h5>
+                      
+                      <p class="mb-4 text-sm text-justify" id="toga-deskripsi">
                       <?php echo $toga['khasiat']?>
                       </p>
                       <!-- <div class="d-flex align-items-center justify-content-between">

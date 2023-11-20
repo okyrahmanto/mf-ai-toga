@@ -56,7 +56,7 @@
     const head_deskripsi_lainnya = "Deskripsi lainnya";
     const head_deskripsi_lainnya_en = "Description";
     const deskripsi_lainnya = "<?= $toga['deskripsi_lainnya'] ?>";
-    const deskripsi_lainnya_en = "<?= $toga['deskripsi_lainnya_en'] ?>";
+    const deskripsi_lainnya_en = "<?= mysql_real_escape_string($toga['deskripsi_lainnya_en']) ?>";
 
     function toogleLang() {
       if (lang=="IDN") {
